@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(141deg 75% 15%),
+    hsl(141deg 75% 5%)
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#capitulo {
+  font-size: 22.4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#nome-autor {
+  font-size: 19.2px;
+}
+
+.container-aplicativo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#anterior,
+#próximo {
+  width: 45px;
+}
+#play-pause {
+  width: 65px;
+}
+
+.pause {
+  display: none;
+}
+
+.tocando .play {
+  display: none;
+}
+
+.tocando .pause {
+  display: block;
+}
+
+#container-botoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
